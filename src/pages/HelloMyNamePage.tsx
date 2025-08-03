@@ -1,4 +1,4 @@
-import { useState, useTransition } from "react"; //1.import
+import { useState } from "react"; //1.import
 export default function HelloMyNamePage() {
   // 2. call useState
   const [name, setName] = useState("");
