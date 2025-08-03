@@ -53,7 +53,7 @@ export default function Sidebar({ userName, type }: SidebarProps) {
         </nav>
       </div>
       <div>
-        <p>
+        <p className="text-white">
           {userName} :{type}
         </p>
       </div>
