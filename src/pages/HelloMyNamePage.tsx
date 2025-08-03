@@ -27,7 +27,7 @@ export default function HelloMyNamePage() {
     }
   };
   return (
-    <div>
+    <div className="container text-center">
       <h3>Hello My Name</h3>
       <input
         className="form-control d-inline m-1"
