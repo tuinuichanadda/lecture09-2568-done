@@ -10,8 +10,7 @@ export default function CounterPage() {
     // ถัดไป มันจะ return const ตัวแปร ที่มีสมาชิก ค่าหนึ่งชื่อ [ count เพื่อไปแสดง, setCount  ] เก็บค่า state เริ่มต้น และค่าที่ถูกอัพเดต
     //count2++; แบบตัวแปรธรรมดา
   };
-  //2.
-  let count2 = 0;
+  //2. let count2 = 0;
   return (
     <div className="container text-center">
       <h2>Counter Page</h2>
