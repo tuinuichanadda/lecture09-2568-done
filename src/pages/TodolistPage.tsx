@@ -58,7 +58,7 @@ function App() {
       <div className="container text-center">
         <h2>Todo List</h2>
         <span className="m-2">
-          All : ({tasks.length}) Done : ({doneLength})
+          All : ({doneLength}) Done : ({tasks.length})
         </span>
         {/* Modal Component */}
         <button
