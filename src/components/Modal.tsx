@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid"; //pnpm install uuid
 import { type TaskCardProps } from "../libs/Todolist";
-
+//
 type props = {
   onAdd: (todo: TaskCardProps) => void;
 };
@@ -13,12 +13,13 @@ export default function Modal({ onAdd }: props) {
   const handleSubmit = () => {
     if (title.trim()) {
       const newtodo = {
+        //เตรียมส่ง prop อันใหม่
         id: uuidv4(),
         title,
         description,
         isDone: false,
       };
-      onAdd(newtodo);
+      onAdd(newtodo); // เรียกฟังก์ชันที่รับมาจาก props
       setTitle("");
       setDescription("");
     }
@@ -72,6 +73,7 @@ export default function Modal({ onAdd }: props) {
             <button
               type="button"
               className="btn btn-success"
+              //2. กด save
               onClick={handleSubmit}
             >
               Save

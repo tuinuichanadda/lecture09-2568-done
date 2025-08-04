@@ -9,6 +9,7 @@ export default function HelloMyNamePage() {
     //event ใน onChange เป็นอ็อบเจกต์ที่มีข้อมูลของ input เช่น
     //แบบเดิม = คุณพยายามเก็บอ็อบเจกต์ทั้งก้อนลงใน name (ซึ่งเป็น string) → จึงเกิด Type Error
     setName(event.target.value);
+    //เกิดกับ event.target= element ไหน
   };
   //6.
   //const [Result, setResult] = useState("");
@@ -35,6 +36,7 @@ export default function HelloMyNamePage() {
         style={{ width: "300px" }}
         // 4.เรียกใช้ event
         onChange={nameInputOnchange}
+        //แสดงว่า name คือตัวแปรที่เราจะใช้ รับค่าจาก input
         value={name}
       />
       <button className="btn btn-primary" onClick={greetBtnOnclike}>

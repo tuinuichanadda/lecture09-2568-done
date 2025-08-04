@@ -7,6 +7,11 @@ import ErrorPage from "./pages/ErrorPage";
 
 export const router = createBrowserRouter([
   //เป็น array of objects
+  //1. {
+  //   path: "/",
+  //   element: <CounterPage />,
+  // },
+  // 2.
   {
     path: "/",
     element: <MainLayout />,
